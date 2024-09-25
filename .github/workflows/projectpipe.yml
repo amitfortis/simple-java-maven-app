@@ -5,4 +5,8 @@ on:
     branches: [ master ]
 
 jobs:
+  versioning: 
+       runs-on: ubuntu-24.04
+       outputs: 
+      
   
