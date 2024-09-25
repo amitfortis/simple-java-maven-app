@@ -1,0 +1,8 @@
+name: Maven Application Pipeline
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  

@@ -10,7 +10,7 @@ COPY --from=test /app/pom.xml .
 COPY --from=test /app/src ./src
 RUN mvn -B clean package -DskipTests
 
-FROM eclipse-temurin:17-jre-jammy 
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 CMD ["java", "-jar", "app.jar"]
